@@ -47,14 +47,14 @@ var
   LCadastroTarefa: TfrmCadastroTarefa;
   lTarefas: TObjectList<TTarefas>;
 begin
+  lTarefas := TObjectList<TTarefas>.Create;
   LCadastroTarefa := TfrmCadastroTarefa.Create(Self, lTarefas);
-
   try
     LCadastroTarefa.ShowModal;
-
-
+    PreencheListView(lTarefas);
   finally
     FreeAndNil(LCadastroTarefa);
+    lTarefas.Free;
   end;
 
 end;
@@ -91,12 +91,17 @@ var
 lItem :  TListItem;
 lTarefa : TTarefas;
 begin
-  if not Assigned(aTarefas) then
+  if not Assigned(aTarefas) then   // aTarefas está instanciada?
     Exit;
   ListView1.Clear;
   for lTarefa in aTarefas do
   begin
-    lItem :=
+    lItem := ListView1.Items.Add;
+    lItem.Caption := lTarefa.Codigo.ToString;
+    lItem.SubItems.Add(lTarefa.Titulo);
+    lItem.SubItems.Add(FormatDateTime('dd/mm/yyyy hh:mm', lTarefa.DataCriacao));
+    lItem.Data := lTarefa;
+
   end;
 
 

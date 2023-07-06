@@ -50,26 +50,35 @@ object frmListadeTarefas: TfrmListadeTarefas
         Left = 493
         Top = 0
         Width = 89
-        Height = 45
+        Height = 46
+        Align = alRight
         Caption = 'Cancelar'
         TabOrder = 0
+        ExplicitHeight = 45
       end
       object btnNovo: TButton
         Left = 0
         Top = 0
         Width = 89
-        Height = 45
+        Height = 46
+        Align = alLeft
         Caption = 'Novo'
         TabOrder = 1
         OnClick = btnNovoClick
+        ExplicitLeft = 2
+        ExplicitTop = -2
+        ExplicitHeight = 45
       end
       object btnEditar: TButton
-        Left = 88
+        Left = 89
         Top = 0
         Width = 89
-        Height = 45
+        Height = 46
+        Align = alLeft
         Caption = 'Editar'
         TabOrder = 2
+        ExplicitLeft = 88
+        ExplicitHeight = 45
       end
     end
     object Panel4: TPanel

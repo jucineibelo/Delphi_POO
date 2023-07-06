@@ -46,6 +46,8 @@ object frmCadastroTarefa: TfrmCadastroTarefa
           Caption = 'Salvar'
           TabOrder = 0
           OnClick = btnSalvarClick
+          ExplicitTop = 1
+          ExplicitHeight = 45
         end
         object btnSair: TButton
           Left = 434
@@ -56,6 +58,8 @@ object frmCadastroTarefa: TfrmCadastroTarefa
           Caption = 'Sair'
           TabOrder = 1
           OnClick = btnSairClick
+          ExplicitTop = 1
+          ExplicitHeight = 45
         end
       end
     end

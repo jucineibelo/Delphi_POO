@@ -51,6 +51,7 @@ begin
   LTarefa.IdUsuario := 1;
   LTarefa.Titulo := edtTitulo.Text;
   LTarefa.Descricao := MemoDescricao.Text;
+  LTarefa.DataCriacao := Now;
   FTarefas.Add(LTarefa);
   edtTitulo.Clear;
   MemoDescricao.Clear;

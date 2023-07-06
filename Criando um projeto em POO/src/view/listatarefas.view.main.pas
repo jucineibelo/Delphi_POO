@@ -47,14 +47,14 @@ var
   LCadastroTarefa: TfrmCadastroTarefa;
   lTarefas: TObjectList<TTarefas>;
 begin
+  lTarefas := TObjectList<TTarefas>.Create;
   LCadastroTarefa := TfrmCadastroTarefa.Create(Self, lTarefas);
-
   try
     LCadastroTarefa.ShowModal;
-
-
+    PreencheListView(lTarefas);
   finally
     FreeAndNil(LCadastroTarefa);
+    lTarefas.Free;
   end;
 
 end;
@@ -62,7 +62,6 @@ end;
 constructor TfrmListadeTarefas.Create(AOwner: TComponent;
   aTarefa: TObjectList<TTarefas>);
 begin
-
 
 end;
 
@@ -81,17 +80,16 @@ begin
 
   finally
     lLogin.Free;
-
   end;
 
 end;
 
 procedure TfrmListadeTarefas.PreencheListView(aTarefas: TObjectList<TTarefas>);
 var
-lItem :  TListItem;
-lTarefa : TTarefas;
+  lItem: TListItem;
+  lTarefa: TTarefas;
 begin
-  if not Assigned(aTarefas) then
+  if not Assigned(aTarefas) then // aTarefas está instanciada?
     Exit;
   ListView1.Clear;
   for lTarefa in aTarefas do
@@ -103,7 +101,6 @@ begin
     lItem.Data := lTarefa;
 
   end;
-
 
 end;
 
