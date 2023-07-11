@@ -1,0 +1,23 @@
+object DmConexao: TDmConexao
+  OnCreate = DataModuleCreate
+  Height = 247
+  Width = 395
+  object FDConnection1: TFDConnection
+    Params.Strings = (
+      
+        'Database=C:\Users\User-J\Desktop\Projetos Delphi\Delphi OO\Crian' +
+        'do um projeto em POO\src\services\db\dados'
+      'DriverID=SQLite')
+    Connected = True
+    LoginPrompt = False
+    Left = 48
+    Top = 48
+  end
+  object FDQuery1: TFDQuery
+    Connection = FDConnection1
+    SQL.Strings = (
+      'select * from usuario')
+    Left = 168
+    Top = 48
+  end
+end

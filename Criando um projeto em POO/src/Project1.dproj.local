@@ -15,11 +15,20 @@
     <Transaction>2023/07/04 22:20:51.000.832,C:\Users\User-J\Desktop\Projetos Delphi\Delphi OO\Criando um projeto em POO\src\view\listatarefas.view.cadastro.pas=C:\Users\User-J\Desktop\Projetos Delphi\Delphi OO\Criando um projeto em POO\src\Unit2.pas</Transaction>
     <Transaction>2023/07/04 22:20:51.000.832,C:\Users\User-J\Desktop\Projetos Delphi\Delphi OO\Criando um projeto em POO\src\view\listatarefas.view.cadastro.dfm=C:\Users\User-J\Desktop\Projetos Delphi\Delphi OO\Criando um projeto em POO\src\Unit2.dfm</Transaction>
     <Transaction>2023/07/04 22:22:58.000.153,=C:\Users\User-J\Desktop\Projetos Delphi\Delphi OO\Criando um projeto em POO\src\Unit3.pas</Transaction>
-    <Transaction>2023/07/04 22:40:46.000.179,C:\Users\User-J\Desktop\Projetos Delphi\Delphi OO\Criando um projeto em POO\src\view\listatarefas.view.tarefa.dfm=C:\Users\User-J\Desktop\Projetos Delphi\Delphi OO\Criando um projeto em POO\src\Unit3.dfm</Transaction>
     <Transaction>2023/07/04 22:40:46.000.179,C:\Users\User-J\Desktop\Projetos Delphi\Delphi OO\Criando um projeto em POO\src\view\listatarefas.view.tarefa.pas=C:\Users\User-J\Desktop\Projetos Delphi\Delphi OO\Criando um projeto em POO\src\Unit3.pas</Transaction>
+    <Transaction>2023/07/04 22:40:46.000.179,C:\Users\User-J\Desktop\Projetos Delphi\Delphi OO\Criando um projeto em POO\src\view\listatarefas.view.tarefa.dfm=C:\Users\User-J\Desktop\Projetos Delphi\Delphi OO\Criando um projeto em POO\src\Unit3.dfm</Transaction>
     <Transaction>2023/07/04 23:59:34.000.998,=C:\Users\User-J\Desktop\Projetos Delphi\Delphi OO\Criando um projeto em POO\src\Unit1.pas</Transaction>
     <Transaction>2023/07/04 23:59:44.000.912,=C:\Users\User-J\Desktop\Projetos Delphi\Delphi OO\Criando um projeto em POO\src\Unit4.pas</Transaction>
-    <Transaction>2023/07/05 00:20:19.000.303,C:\Users\User-J\Desktop\Projetos Delphi\Delphi OO\Criando um projeto em POO\src\view\listatarefas.view.login.dfm=C:\Users\User-J\Desktop\Projetos Delphi\Delphi OO\Criando um projeto em POO\src\Unit4.dfm</Transaction>
     <Transaction>2023/07/05 00:20:19.000.303,C:\Users\User-J\Desktop\Projetos Delphi\Delphi OO\Criando um projeto em POO\src\view\listatarefas.view.login.pas=C:\Users\User-J\Desktop\Projetos Delphi\Delphi OO\Criando um projeto em POO\src\Unit4.pas</Transaction>
+    <Transaction>2023/07/05 00:20:19.000.303,C:\Users\User-J\Desktop\Projetos Delphi\Delphi OO\Criando um projeto em POO\src\view\listatarefas.view.login.dfm=C:\Users\User-J\Desktop\Projetos Delphi\Delphi OO\Criando um projeto em POO\src\Unit4.dfm</Transaction>
+    <Transaction>2023/07/09 10:31:53.000.022,=C:\Users\User-J\Desktop\Projetos Delphi\Delphi OO\Criando um projeto em POO\src\Unit1.pas</Transaction>
+    <Transaction>2023/07/09 10:49:01.000.572,C:\Users\User-J\Desktop\Projetos Delphi\Delphi OO\Criando um projeto em POO\src\Unit1.pas=C:\Users\User-J\Desktop\Projetos Delphi\Delphi OO\Criando um projeto em POO\src\model\conexao\conexao.pas</Transaction>
+    <Transaction>2023/07/09 10:49:01.000.572,C:\Users\User-J\Desktop\Projetos Delphi\Delphi OO\Criando um projeto em POO\src\Unit1.dfm=C:\Users\User-J\Desktop\Projetos Delphi\Delphi OO\Criando um projeto em POO\src\model\conexao\conexao.dfm</Transaction>
+    <Transaction>2023/07/09 11:01:03.000.665,C:\Users\User-J\Desktop\Projetos Delphi\Delphi OO\Criando um projeto em POO\src\model\conexao\conexao.pas=</Transaction>
+    <Transaction>2023/07/09 11:01:24.000.619,=C:\Users\User-J\Desktop\Projetos Delphi\Delphi OO\Criando um projeto em POO\src\Unit1.pas</Transaction>
+    <Transaction>2023/07/09 11:01:37.000.914,C:\Users\User-J\Desktop\Projetos Delphi\Delphi OO\Criando um projeto em POO\src\Unit1.pas=C:\Users\User-J\Desktop\Projetos Delphi\Delphi OO\Criando um projeto em POO\src\model\conexao\conexao.pas</Transaction>
+    <Transaction>2023/07/09 11:01:37.000.914,C:\Users\User-J\Desktop\Projetos Delphi\Delphi OO\Criando um projeto em POO\src\Unit1.dfm=C:\Users\User-J\Desktop\Projetos Delphi\Delphi OO\Criando um projeto em POO\src\model\conexao\conexao.dfm</Transaction>
+    <Transaction>2023/07/10 01:27:40.000.944,=C:\Users\User-J\Desktop\Projetos Delphi\Delphi OO\Criando um projeto em POO\src\Unit1.pas</Transaction>
+    <Transaction>2023/07/10 01:41:20.000.049,C:\Users\User-J\Desktop\Projetos Delphi\Delphi OO\Criando um projeto em POO\src\Unit1.pas=C:\Users\User-J\Desktop\Projetos Delphi\Delphi OO\Criando um projeto em POO\src\DAO\listatarefas.dao.usuario.pas</Transaction>
   </Transactions>
 </BorlandProject>

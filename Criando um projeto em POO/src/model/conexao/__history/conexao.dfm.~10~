@@ -1,0 +1,21 @@
+object DmConexao: TDmConexao
+  OnCreate = DataModuleCreate
+  Height = 247
+  Width = 395
+  object FDConnection1: TFDConnection
+    Params.Strings = (
+      
+        'Database=C:\Program Files\Microsoft SQL Server\MSSQL15.SQLEXPRES' +
+        'S\MSSQL\DATA\dados.mdf'
+      'User_Name=User-J'
+      'DriverID=MySQL')
+    LoginPrompt = False
+    Left = 48
+    Top = 48
+  end
+  object FDQuery1: TFDQuery
+    Connection = FDConnection1
+    Left = 168
+    Top = 48
+  end
+end

@@ -7,7 +7,7 @@ uses
   System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.StdCtrls,
   listatarefas.model.usuario, Vcl.ComCtrls, System.Generics.Collections,
-  listatarefas.model.tarefas;
+  listatarefas.model.tarefas, listatarefas.dao.usuario;
 
 type
   TfrmListadeTarefas = class(TForm)
@@ -25,8 +25,11 @@ type
     procedure FormCreate(Sender: TObject);
     procedure btnNovoClick(Sender: TObject);
   private
+    FDAOusuario : TDAOUsuario;
+     FUsuario: TUsuario;
     function ValidaUsuario(aEmail, aSenha: string): Boolean;
     procedure PreencheListView(aTarefas: TObjectList<TTarefas>);
+
   public
     FTarefas: TObjectList<TTarefas>;
     constructor Create(AOwner: TComponent; aTarefa: TObjectList<TTarefas>);
@@ -105,18 +108,12 @@ begin
 end;
 
 function TfrmListadeTarefas.ValidaUsuario(aEmail, aSenha: string): Boolean;
-var
-  lUsuario: TUsuario;
 begin
-  lUsuario := TUsuario.Create;
-  try
-    lUsuario.Email := 'mail@mail.com';
-    lUsuario.Senha := '123';
-
-    Result := ((lUsuario.Email = aEmail) and (lUsuario.Senha = aSenha));
-  finally
-    lUsuario.Free;
-  end;
+ FDAOusuario := TDAOUsuario.Create;
+ FUsuario := FDAOusuario.LoginUsuario(aEmail, aSenha);
+ if not Assigned(FUsuario) then
+  Result := False;
+ Result := not FUsuario.Id.ToString.IsEmpty;
 
 end;
 

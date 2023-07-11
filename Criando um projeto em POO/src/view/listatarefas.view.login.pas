@@ -47,12 +47,6 @@ begin
   lCadastroUsuario := TfrmCadastroUsuario.Create(nil);
   try
     lCadastroUsuario.ShowModal;
-    if lCadastroUsuario.ModalResult = mrOk then
-    begin
-      edtEmail.Text := lCadastroUsuario.FUsuario.Email;
-      edtSenha.Text := lCadastroUsuario.FUsuario.Senha;
-      btnEntrar.SetFocus;
-    end;
   finally
     FreeAndNil(lCadastroUsuario);
   end;

@@ -5,7 +5,7 @@ interface
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.StdCtrls,
-  listatarefas.model.usuario;
+  listatarefas.model.usuario, listatarefas.dao.usuario;
 
 type
   TfrmCadastroUsuario = class(TForm)
@@ -29,9 +29,9 @@ type
     procedure FormDestroy(Sender: TObject);
     procedure btnSalvarClick(Sender: TObject);
   private
-    { Private declarations }
+    FDAO : TDAOUsuario;
+    procedure Salvar;
   public
-    FUsuario : TUsuario;
   end;
 
 
@@ -41,21 +41,40 @@ implementation
 
 procedure TfrmCadastroUsuario.btnSalvarClick(Sender: TObject);
 begin
-  FUsuario.id := 1;
-  FUsuario.Nome := edtNome.Text;
-  FUsuario.Email := edtEmail.Text;
-  FUsuario.Senha := edtSenha.Text;
+  Salvar;
   ModalResult := mrOk;
 end;
 
 procedure TfrmCadastroUsuario.FormCreate(Sender: TObject);
 begin
-  FUsuario := TUsuario.Create;
+  FDAO := TDAOUsuario.Create;
+
 end;
 
 procedure TfrmCadastroUsuario.FormDestroy(Sender: TObject);
 begin
-  FUsuario.Free;
+  FDAO.Free;
+end;
+
+procedure TfrmCadastroUsuario.Salvar;
+var
+  lUsuario : TUsuario;
+begin
+  lUsuario := TUsuario.Create;
+  try
+    lUsuario.Nome := edtNome.Text;
+    lUsuario.Email := edtEmail.Text;
+    lUsuario.Senha := edtSenha.Text;
+    FDAO.Inserir(lUsuario);
+    edtNome.Clear;
+    edtEmail.Clear;
+    edtSenha.Clear;
+
+  finally
+    lUsuario.Free;
+  end;
+
+
 end;
 
 end.

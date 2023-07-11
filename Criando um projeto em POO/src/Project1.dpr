@@ -7,7 +7,9 @@ uses
   listatarefas.model.tarefas in 'model\listatarefas.model.tarefas.pas',
   listatarefas.view.cadastro in 'view\listatarefas.view.cadastro.pas' {frmCadastroUsuario},
   listatarefas.view.tarefa in 'view\listatarefas.view.tarefa.pas' {frmCadastroTarefa},
-  listatarefas.view.login in 'view\listatarefas.view.login.pas' {frmLogin};
+  listatarefas.view.login in 'view\listatarefas.view.login.pas' {frmLogin},
+  conexao in 'model\conexao\conexao.pas' {DmConexao: TDataModule},
+  listatarefas.dao.usuario in 'DAO\listatarefas.dao.usuario.pas';
 
 {$R *.res}
 

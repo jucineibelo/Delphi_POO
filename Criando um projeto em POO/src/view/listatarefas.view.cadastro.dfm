@@ -2,39 +2,37 @@ object frmCadastroUsuario: TfrmCadastroUsuario
   Left = 0
   Top = 0
   Caption = 'Cadastro de Usu'#225'rio'
-  ClientHeight = 195
-  ClientWidth = 460
+  ClientHeight = 186
+  ClientWidth = 442
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -11
   Font.Name = 'Tahoma'
   Font.Style = []
-  OldCreateOrder = False
   OnCreate = FormCreate
   OnDestroy = FormDestroy
-  PixelsPerInch = 96
   TextHeight = 13
   object Panel1: TPanel
     Left = 0
     Top = 0
-    Width = 460
-    Height = 195
+    Width = 442
+    Height = 186
     Align = alClient
     BevelOuter = bvNone
     TabOrder = 0
-    ExplicitWidth = 513
-    ExplicitHeight = 270
+    ExplicitWidth = 456
+    ExplicitHeight = 194
     object Panel2: TPanel
       Left = 0
-      Top = 150
-      Width = 460
+      Top = 141
+      Width = 442
       Height = 45
       Align = alBottom
       BevelOuter = bvNone
       TabOrder = 0
-      ExplicitTop = 225
-      ExplicitWidth = 513
+      ExplicitTop = 149
+      ExplicitWidth = 456
       object btnSalvar: TButton
         Left = 0
         Top = 0
@@ -48,17 +46,17 @@ object frmCadastroUsuario: TfrmCadastroUsuario
     object Panel3: TPanel
       Left = 0
       Top = 0
-      Width = 460
-      Height = 150
+      Width = 442
+      Height = 141
       Align = alClient
       BevelOuter = bvNone
       TabOrder = 1
-      ExplicitWidth = 513
-      ExplicitHeight = 225
+      ExplicitWidth = 456
+      ExplicitHeight = 149
       object lblNome: TLabel
         Left = 0
         Top = 0
-        Width = 460
+        Width = 442
         Height = 18
         Align = alTop
         Caption = '  Nome'
@@ -68,7 +66,7 @@ object frmCadastroUsuario: TfrmCadastroUsuario
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
-        ExplicitWidth = 513
+        ExplicitWidth = 49
       end
       object Panel4: TPanel
         Left = 440
@@ -82,37 +80,34 @@ object frmCadastroUsuario: TfrmCadastroUsuario
       object Panel6: TPanel
         Left = 0
         Top = 18
-        Width = 460
+        Width = 442
         Height = 26
         Align = alTop
         BevelOuter = bvNone
         TabOrder = 1
-        ExplicitWidth = 513
+        ExplicitWidth = 456
         object edtNome: TEdit
-          Left = 0
+          Left = 8
           Top = 5
-          Width = 460
+          Width = 425
           Height = 21
-          Align = alBottom
+          Align = alCustom
           TabOrder = 0
-          ExplicitTop = 17
-          ExplicitWidth = 513
         end
       end
       object Panel5: TPanel
         Left = 0
         Top = 44
-        Width = 460
+        Width = 442
         Height = 18
         Align = alTop
         BevelOuter = bvNone
         TabOrder = 2
-        ExplicitTop = 59
-        ExplicitWidth = 513
+        ExplicitWidth = 456
         object lblEmail: TLabel
           Left = 0
           Top = 0
-          Width = 460
+          Width = 442
           Height = 18
           Align = alTop
           Caption = '  E-mail'
@@ -122,43 +117,41 @@ object frmCadastroUsuario: TfrmCadastroUsuario
           Font.Name = 'Tahoma'
           Font.Style = []
           ParentFont = False
-          ExplicitWidth = 48
+          ExplicitTop = -6
+          ExplicitWidth = 460
         end
       end
       object Panel7: TPanel
         Left = 0
         Top = 62
-        Width = 460
+        Width = 442
         Height = 26
         Align = alTop
         BevelOuter = bvNone
         TabOrder = 3
-        ExplicitWidth = 513
+        ExplicitWidth = 456
         object edtEmail: TEdit
-          Left = 0
+          Left = 8
           Top = 5
-          Width = 460
+          Width = 425
           Height = 21
-          Align = alBottom
+          Align = alCustom
           TabOrder = 0
-          ExplicitLeft = 16
-          ExplicitTop = 20
-          ExplicitWidth = 473
         end
       end
       object Panel8: TPanel
         Left = 0
         Top = 88
-        Width = 460
+        Width = 442
         Height = 18
         Align = alTop
         BevelOuter = bvNone
         TabOrder = 4
-        ExplicitWidth = 513
+        ExplicitWidth = 456
         object lblSenha: TLabel
           Left = 0
           Top = 0
-          Width = 460
+          Width = 442
           Height = 18
           Align = alBottom
           Caption = '  Senha'
@@ -168,29 +161,25 @@ object frmCadastroUsuario: TfrmCadastroUsuario
           Font.Name = 'Tahoma'
           Font.Style = []
           ParentFont = False
-          ExplicitLeft = 1
-          ExplicitTop = 4
           ExplicitWidth = 50
         end
       end
       object Panel9: TPanel
         Left = 0
         Top = 106
-        Width = 460
+        Width = 442
         Height = 26
         Align = alTop
         BevelOuter = bvNone
         TabOrder = 5
-        ExplicitWidth = 513
+        ExplicitWidth = 456
         object edtSenha: TEdit
-          Left = 0
-          Top = 5
-          Width = 460
+          Left = 8
+          Top = 0
+          Width = 425
           Height = 21
-          Align = alBottom
+          Align = alCustom
           TabOrder = 0
-          ExplicitLeft = 8
-          ExplicitWidth = 473
         end
       end
     end
